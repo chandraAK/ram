@@ -1,0 +1,102 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Loader */
+#loader {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #f8f9fa;
+}
+
+.nav-link {
+  margin: 0 15px;
+}
+
+/* Home Section */
+.home {
+  height: 80vh;
+  background: url('img/landing.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+/* Feature Section */
+.feature {
+  padding: 60px 0;
+}
+
+/* Products Section */
+.products {
+  padding: 60px 0;
+}
+
+.card {
+  transition: transform 0.2s;
+  background-color: #bbb;
+  
+}
+
+.card:hover {
+  transform: scale(1.05);
+  zoom: unset;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 60px 0;
+  background-color: gray;
+
+}
+
+
+/* Contact Section */
+.contact {
+  padding: 60px 0;
+}
+
+/* Footer */
+.footer {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+
+.footer h5 {
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  margin-right: 10px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color:white;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .footer {
+  background-color: #121212;
+
+}
+
+body.dark-mode .form-control {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode .form-control::placeholder {
+  color: #bbb;
+}
